@@ -11,6 +11,12 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      packages: write
+      issues: write
+      pull-requests: write
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
