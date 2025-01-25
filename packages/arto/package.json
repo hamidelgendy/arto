@@ -1,0 +1,53 @@
+{
+  "name": "arto",
+  "version": "1.0.0-beta.2",
+  "description": "Arto is a flexible and type-safe class name management library for building scalable UIs with variants, states, and conditional styling.",
+  "homepage": "https://arto.elgndy.com",
+  "bugs": {
+    "url": "https://github.com/hamidelgendy/arto/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamidelgendy/arto.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Hamid Elgndy",
+    "email": "hamid@elgndy.com"
+  },
+  "keywords": [
+    "arto",
+    "class-management",
+    "css-utilities",
+    "typescript",
+    "javascript",
+    "tailwindcss",
+    "responsive-design",
+    "dynamic-css",
+    "utility-first",
+    "design-system",
+    "component-styling",
+    "frontend",
+    "UI-library",
+    "variants",
+    "state-driven",
+    "plugin-system",
+    "custom-classes",
+    "modifiers",
+    "conditional-variants",
+    "accessible-css"
+  ],
+  "type": "module",
+  "main": "dist/arto.cjs.js",
+  "module": "dist/arto.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --project tsconfig.json --noEmit && vite build",
+    "build:watch": "tsc --project tsconfig.json && vite build --watch",
+    "check": "tsc --project tsconfig.json --noEmit"
+  }
+}

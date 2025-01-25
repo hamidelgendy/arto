@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arto Dev Preview</title>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script type="module">
+      import { arto } from 'src'
+
+      const styles = arto({
+        className: 'base-class',
+        variants: {
+          size: {
+            small: 'text-sm',
+            large: 'text-lg',
+          },
+          color: {
+            primary: 'bg-primary',
+            secondary: 'bg-secondary',
+          },
+        },
+        states: {
+          disabled: 'disabled',
+        },
+      })
+
+      // Create a couple of buttons inside #app
+      const app = document.getElementById('app')
+
+      // (1) A small, secondary button
+      const btn1 = document.createElement('button')
+      btn1.textContent = 'Small, Secondary'
+      btn1.className = styles({ variants: { size: 'small', color: 'secondary' } })
+      app.appendChild(btn1)
+
+      // (2) A large, primary & disabled button
+      const btn2 = document.createElement('button')
+      btn2.textContent = 'Large, Primary, Disabled'
+      btn2.className = styles({
+        variants: { size: 'large', color: 'primary' },
+        states: { disabled: true },
+      })
+      app.appendChild(btn2)
+    </script>
+  </body>
+</html>

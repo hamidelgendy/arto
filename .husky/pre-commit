@@ -1,0 +1,2 @@
+#!/bin/sh
+cd "$(dirname "$0")/.." && pnpm --no lint-staged --concurrent false

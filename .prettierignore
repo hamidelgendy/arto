@@ -1,0 +1,11 @@
+coverage
+public
+dist
+pnpm-lock.yaml
+pnpm-workspace.yaml
+.idea
+.next
+package-lock.json
+node_modules
+next-env.d.ts
+next.config.ts
