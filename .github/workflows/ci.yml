@@ -12,22 +12,24 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [18]
 
     steps:
-      - name: Checkout Repository
+      - name: Check out repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
 
-      - name: Setup PNPM
+      - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 9
+
+      - name: Confirm pnpm is on PATH
+        run: pnpm --version
 
       - name: Install Dependencies
         run: pnpm install
