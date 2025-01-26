@@ -38,11 +38,11 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Build Library
-        run: pnpm run build
-
-      - name: Run Semantic Release
+      - name: Changesets Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
