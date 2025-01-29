@@ -2,7 +2,8 @@
   "mode": "pre",
   "tag": "beta",
   "initialVersions": {
-    "arto": "1.0.0-beta.2"
+    "arto": "1.0.0-beta.2",
+    "react-playground": "0.0.0"
   },
-  "changesets": []
+  "changesets": ["ninety-doors-vanish"]
 }
