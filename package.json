@@ -19,7 +19,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "version-packages": "changeset version && pnpm format:fix",
+    "version-packages": "changeset version && pnpm format",
     "release": "pnpm run build && pnpm changeset publish"
   },
   "lint-staged": {
