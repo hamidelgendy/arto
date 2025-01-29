@@ -38,7 +38,7 @@
     "accessible-css"
   ],
   "type": "module",
-  "main": "dist/arto.cjs.js",
+  "main": "dist/arto.cjs",
   "module": "dist/arto.js",
   "types": "dist/index.d.ts",
   "files": [
