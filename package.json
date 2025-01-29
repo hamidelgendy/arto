@@ -14,6 +14,7 @@
     "docs:build": "pnpm --filter './docs' docs:build",
     "docs:preview": "pnpm --filter './docs' docs:preview",
     "test": "vitest --config vitest.config.ts run --coverage",
+    "test:watch": "vitest --config vitest.config.ts",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
