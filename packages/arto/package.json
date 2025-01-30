@@ -1,6 +1,6 @@
 {
   "name": "arto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Arto is a flexible and type-safe class name management library for building scalable UIs with variants, states, and conditional styling.",
   "homepage": "https://arto.elgndy.com",
   "bugs": {
