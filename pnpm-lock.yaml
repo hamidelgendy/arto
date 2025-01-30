@@ -62,9 +62,6 @@ importers:
       lint-staged:
         specifier: 15.4.2
         version: 15.4.2
-      pathe:
-        specifier: 2.0.2
-        version: 2.0.2
       prettier:
         specifier: 3.4.2
         version: 3.4.2

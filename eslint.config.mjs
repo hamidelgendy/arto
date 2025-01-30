@@ -1,4 +1,4 @@
-import { resolve } from 'pathe'
+import { resolve } from 'node:path'
 import globals from 'globals'
 import tsParser from '@typescript-eslint/parser'
 import tsEslintPlugin from '@typescript-eslint/eslint-plugin'
